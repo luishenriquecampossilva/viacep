@@ -1,6 +1,7 @@
 
 <?php
-include('viacep.php');
+include('postmon.php');
+
 $address = getAdrdress();
 ?>
 
@@ -26,10 +27,10 @@ $address = getAdrdress();
         echo $address->bairro;
         ?>">
         <input type="text" placeholder="cidade" name="cidade"value = "<?php
-        echo $address->localidade;
+        echo $address->cidade;
         ?>">
         <input type="text" placeholder="estado" name="estado"value = "<?php
-        echo $address->uf;
+        echo $address->estado;
         ?>">
     </form>
 </body>
